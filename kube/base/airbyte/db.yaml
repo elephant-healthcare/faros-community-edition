@@ -8,6 +8,7 @@ spec:
       containers:
         - name: airbyte-db-container
           env:
+            # TODO: ADD JOB_KUBE_MAIN_CONTAINER_IMAGE_PULL_SECRET https://docs.airbyte.com/operator-guides/configuring-airbyte/#kubernetes-deployments
             - name: CONFIG_DATABASE_PASSWORD
               valueFrom:
                 configMapKeyRef:
