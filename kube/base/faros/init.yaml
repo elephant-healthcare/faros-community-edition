@@ -80,8 +80,8 @@ spec:
                   key: HASURA_URL
             - name: HASURA_GRAPHQL_ADMIN_SECRET
               valueFrom:
-                configMapKeyRef:
-                  name: faros-config
+                secretKeyRef:
+                  name: hasura-admin-secret
                   key: HASURA_GRAPHQL_ADMIN_SECRET
             - name: HASURA_GRAPHQL_DATABASE_URL
               valueFrom:
